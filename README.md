@@ -1,6 +1,7 @@
 # MERN-Stack-Developer-Roadmap
 ### MERN Stack Developer Roadmap. Full Stack Developer Roadmap from scratch.
 ### Under Development (Star this repository for future references)
+### (Research & Learn topics in detail. Watch videos & Read documentations / tutorial sites)
 # 1. HTML:
 
 ## Structure:
@@ -135,7 +136,6 @@
 - Advanced Data Structures: Sets, Maps, Iterators, Generators for complex data management.
 
 # 4. Learn Web Fundamentals & Node.js Express.js & Sample Login Project
-### (Research & Learn following topics in detail. Watch videos & Read documentations / tutorial sites)
 
 ### 1. URL Structure: Break down the components of a URL (Uniform Resource Locator):
 - Scheme: The protocol (e.g., http:, https:).
