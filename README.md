@@ -1,9 +1,13 @@
 # MERN-Stack-Developer-Roadmap
-### MERN Stack Developer Roadmap. Full Stack Developer Roadmap from scratch.
-### Under Development (Star this repository for future references)
-### (Research & Learn topics in detail. Watch videos & Read documentations / tutorial sites)
-# 1. HTML:
 
+### MERN Stack Developer Roadmap. Full Stack Developer Roadmap from scratch.
+
+#### Research & Learn topics in detail. Watch videos & Read documentations / tutorial sites.
+#### Under Development (Star this repository for future references)
+
+<details> 
+  <summary> <h2> 1. HTML </h2> </summary>
+  
 ## Structure:
 - Document Type Definition (DOCTYPE) declaration.
 - Basic HTML elements like `<html>, <head>, <body>, <title>.`
@@ -51,11 +55,240 @@
 - Build small projects to solidify your understanding and explore different features.
 - There are many resources available online and in libraries to learn HTML & CSS in more detail.
 
-# 2. Bootstrap, Basic Javascript, DOM Manipulation
+</details>
 
-## Under Development!
 
-# 3. Deep Dive into Javascript
+
+
+<details> 
+  
+  <summary> <h2> 2. Bootstrap, Basic Javascript, DOM Manipulation </h2> </summary>
+
+### 1. JavaScript & DOM Manipulation: 
+
+- Focus on basic JavaScript concepts through tutorials and practice.
+- Learn DOM manipulation methods (e.g., getElementById, querySelector) to control HTML elements. This will be crucial for interacting with Bootstrap components later.
+
+### 2. Bootstrap in Detail :
+
+- Grid System:
+  - Understand Bootstrap's grid system for creating responsive layouts.
+  - Learn about grid classes (columns, rows), responsive breakpoints (e.g., .col-sm-4 for small screens), and how they define website structure.
+  - Practice creating layouts with different column configurations for various screen sizes.
+- Components:
+  - Explore Bootstrap's pre-built components like buttons, navigation bars, cards, modals, etc.
+  - Learn how to integrate these components into your HTML code using their class names and customization options.
+  - Practice adding and customizing components to enhance your website's functionality and user interface.
+- Utilities:
+  - Discover Bootstrap's utility classes for styling (margins, padding, colors, positioning).
+  - Learn how to use these utilities to fine-tune the appearance of your website elements without extensive custom CSS.
+  - Explore responsive utilities like .d-none and .d-flex to show/hide elements and adapt layout for different devices.
+- Include Bootstrap's CSS library by adding to the <head> section of your index.html: 
+  <br> `<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">`
+- Include Bootstrap's JavaScript library for interactive components.
+<br> `<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>`
+
+### 3. Build with HTML, CSS & Bootstrap :
+
+- Create basic HTML structure with header, navigation, content sections, and footer.
+- Apply CSS styles using Bootstrap's pre-built classes or custom styles for layout and design.
+- Integrate Bootstrap components to enhance user experience (buttons, forms, carousels, etc.).
+- Utilize Bootstrap's grid system and utilities to ensure your website is responsive and adapts to different screen sizes.
+
+### 4. Responsiveness with Media Queries : 
+
+- While Bootstrap provides a responsive foundation, you can further enhance responsiveness with media queries.
+- Learn how to use media queries in your CSS to adjust layouts for specific screen sizes (desktop, tablet, mobile) on top of Bootstrap's built-in responsiveness.
+- Use media queries to fine-tune the behavior of Bootstrap components or override default styles for a more customized responsive experience.
+
+### 5. Additional Learning (Throughout the Week):
+
+- Delve deeper into DOM manipulation techniques for dynamic content changes based on user interactions or events (e.g., adding/removing elements, updating content).
+- Explore advanced selectors for more precise element selection in your JavaScript code when working with Bootstrap components.
+- Learn about addEventListener to attach event handlers to elements and respond to user interactions (clicks, scrolling, form submissions, etc.). This can be used to trigger actions within Bootstrap components.
+
+### 6. Clone a Public Website
+
+- Start with basic HTML structure for each page, including header, navigation, content sections, and footer.
+- Apply CSS styles for typography, colors, backgrounds, and layout using Bootstrap's pre-built classes or custom styles.
+- Integrate Bootstrap components to enhance user experience (buttons, forms, carousels, etc.).
+
+#### Responsiveness with Media Queries:
+
+- Implement media queries to adjust your website's layout for different screen sizes (desktop, tablet, mobile).
+- Use responsive utilities like .d-none and .d-flex to show/hide elements and adapt layout for different devices.
+
+### 7. Build a Personal Website with Template
+
+- Template Selection:
+  
+  - Choose a website template that aligns with your personal brand and style (e.g., portfolio, blog) from free or paid sources like Bootstrap Themes, ThemeForest, etc.
+
+- Customize the Template:
+
+  - Replace placeholder content with your own text, images, and videos.
+  - Modify the layout and styles using the template's settings or custom CSS to reflect your preferences.
+
+- Enquiry Form with Validation:
+
+  - Integrate a form with fields for name, email, message, etc.
+  - Implement JavaScript validation to ensure users enter required information and provide error messages for invalid input.
+
+- Integrate Contact Form:
+  - Within the contact form section (`<section id="contact">...</section>`), create an HTML form:
+
+```bash
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add custom styles for error messages */
+        .error-message {
+            color: red;
+            font-size: 0.875rem; /* Adjust font size as needed */
+        }
+    </style>
+</head>
+<body>
+
+<section class="container mt-5">
+    <h2>Contact Form</h2>
+    <form id="contact-form">
+        <div class="form-group mb-3">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+            <div id="name-error" class="error-message"></div>
+        </div>
+        <div class="form-group mb-3">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+            <div id="email-error" class="error-message"></div>
+        </div>
+        <div class="form-group mb-3">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+            <div id="message-error" class="error-message"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</section>
+
+<footer class="container py-4 text-center">
+    <!-- Footer content -->
+</footer>
+
+<script>
+    // --- Form Validation ---
+
+    const form = document.getElementById('contact-form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    const submitButton = document.querySelector('form button');
+
+    function validateForm() {
+        let isValid = true;
+
+        // Name Validation
+        if (nameInput.value.trim() === '') {
+            nameInput.classList.add('is-invalid'); // Add Bootstrap's invalid class
+            document.getElementById('name-error').textContent = 'Please enter your name.'; // Display error message
+            isValid = false;
+        } else {
+            nameInput.classList.remove('is-invalid'); // Remove Bootstrap's invalid class
+            document.getElementById('name-error').textContent = ''; // Clear error message
+        }
+
+        // Email Validation (Using regular expression)
+        const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!emailRegex.test(emailInput.value)) {
+            emailInput.classList.add('is-invalid'); // Add Bootstrap's invalid class
+            document.getElementById('email-error').textContent = 'Please enter a valid email address.'; // Display error message
+            isValid = false;
+        } else {
+            emailInput.classList.remove('is-invalid'); // Remove Bootstrap's invalid class
+            document.getElementById('email-error').textContent = ''; // Clear error message
+        }
+
+        // Message Validation
+        if (messageInput.value.trim() === '') {
+            messageInput.classList.add('is-invalid'); // Add Bootstrap's invalid class
+            document.getElementById('message-error').textContent = 'Please enter your message.'; // Display error message
+            isValid = false;
+        } else {
+            messageInput.classList.remove('is-invalid'); // Remove Bootstrap's invalid class
+            document.getElementById('message-error').textContent = ''; // Clear error message
+        }
+
+        return isValid;
+    }
+
+    // --- Form Submission Handling ---
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        if (validateForm()) {
+            // If form is valid, submit the form data
+            const formData = new FormData(form);
+
+            // AJAX request to submit form data to server
+            fetch('YOUR_SERVER_ENDPOINT', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                // Handle response from server
+                if (response.ok) {
+                    // Clear form inputs
+                    nameInput.value = '';
+                    emailInput.value = '';
+                    messageInput.value = '';
+
+                    // Optionally display success message or redirect to a thank you page
+                    alert('Form submitted successfully!');
+                } else {
+                    // Handle error response from server
+                    alert('Failed to submit form. Please try again later.');
+                }
+            })
+            .catch(error => {
+                // Handle network errors or other exceptions
+                console.error('Error:', error);
+                alert('An error occurred while submitting the form. Please try again later.');
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
+```
+
+- Social Media Links & Contact Details:
+
+  - Add social media icons linking to your profiles on platforms like LinkedIn, Twitter, etc.
+  - Include clear contact information (email address, phone number, etc.) to facilitate communication.
+
+
+### 8. Website Performance Optimization
+
+- Learn about Lighthouse:
+  - Go through the guide at https://developer.chrome.com/docs/lighthouse/overview to understand how Google's Lighthouse tool evaluates website performance.
+- Run Lighthouse Audit:
+  - Use Lighthouse (integrated in most browsers' developer tools) to assess your website's performance metrics like Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS).
+- Improve Performance:
+
+  - Based on Lighthouse recommendations, optimize your website for speed and user experience.
+  - Consider strategies like image optimization, code minification, leveraging browser caching, etc. (Resources available online)
+
+</details>
+
+<details> 
+  <summary> <h2> 3. Deep Dive into Javascript </h2> </summary>
 
 ### 1. Foundational Concepts:
 
@@ -135,7 +368,10 @@
 - Spread & Rest Operators: Using ... operator for spreading elements and collecting remaining arguments.
 - Advanced Data Structures: Sets, Maps, Iterators, Generators for complex data management.
 
-# 4. Learn Web Fundamentals & Node.js Express.js & Sample Login Project
+</details>
+
+<details> 
+  <summary> <h2> 4. Learn Web Fundamentals & Node.js Express.js & Sample Login Project</h2> </summary>
 
 ### 1. URL Structure: Break down the components of a URL (Uniform Resource Locator):
 - Scheme: The protocol (e.g., http:, https:).
@@ -337,9 +573,10 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 #### In essence, libuv acts as the workhorse behind Node.js's asynchronous I/O capabilities, enabling the efficient execution of the event loop model and making Node.js well-suited for I/O-bound applications.
 
-## Under Development!
+</details>
 
-# 5. MongoDB Database
+<details> 
+  <summary> <h2> 5.  MongoDB Database </h2> </summary>
 
 ### 1. Introduction
 
@@ -445,6 +682,9 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 - Clustered Collections: Understand clustered collections, a storage optimization technique for frequently accessed data together on disk.
 - Write-Ahead Logging (WAL): Explore the Write-Ahead Logging (WAL) mechanism used by MongoDB to ensure data durability.
 
+</details>
+
+## Under Development
 
 # 6. Mini Project - Users & Admin Managment System
 
@@ -493,4 +733,4 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 # 28. Revision 2
 
-# 29. Final Interview Tips
+# 29. Job Interview Tips
