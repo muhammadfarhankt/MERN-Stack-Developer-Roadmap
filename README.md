@@ -285,7 +285,20 @@
   - Based on Lighthouse recommendations, optimize your website for speed and user experience.
   - Consider strategies like image optimization, code minification, leveraging browser caching, etc. (Resources available online)
 
+### 9. CDNs (Content Delivery Networks)
+
+- Geographically distributed servers caching website content for faster loading times.
+- Benefits for HTML pages:
+  - Faster loading: Serves content from closer servers, improving website speed globally.
+  - Reduced server load: Handles traffic, reducing pressure on your main server.
+  - Improved scalability: Handles traffic spikes for better website performance.
+  - Increased availability: Redundancy ensures content delivery even if a server goes down.
+  - Enhanced security: Some CDNs offer protection from malicious attacks.
+- Importing from CDN: Use <link> or <script> tags with the CDN URL for content (CSS, JS libraries).
+  
 </details>
+
+
 
 <details> 
   <summary> <h2> 3. Deep Dive into Javascript </h2> </summary>
