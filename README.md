@@ -341,6 +341,111 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 # 5. MongoDB Database
 
+### 1. Introduction
+
+- SQL vs. NoSQL: Understand the key differences between relational databases (SQL) and document-oriented databases (NoSQL) like MongoDB.
+- What is MongoDB? Gain a basic understanding of MongoDB, its purpose, and its core features.
+- Run on JS Engine: Briefly explore how MongoDB leverages JavaScript for data manipulation and querying.
+
+### 2. Core Concepts
+
+- Non-relational Document Based: Delve deeper into the concept of document-oriented databases and how data is stored in MongoDB documents (JSON-like structures).
+- Advantages & Disadvantages: Weigh the pros and cons of using MongoDB for your project.
+- BSON: Learn about BSON (Binary JSON), the data format used internally by MongoDB for efficient storage and transmission.
+- MongoDB Structure: Understand the fundamental structure of MongoDB, including databases, collections (akin to tables in SQL), and documents.
+- MongoDB Architecture: Explore the core architecture of MongoDB, including the server process, storage engines, and communication protocols.
+
+### 3. Data Manipulation
+
+- JSON vs BSON: Differentiate between JSON and BSON, understanding their similarities and the role of BSON in MongoDB.
+- MongoDB Shell: Get familiar with the MongoDB shell, a command-line interface for interacting with your MongoDB instance.
+- CRUD Operations: Master the fundamental CRUD (Create, Read, Update, Delete) operations for working with documents in MongoDB collections.
+- Cursors: Learn how cursors are used to iterate through query results in MongoDB.
+- Understand methods like `toArray` and `forEach` for working with cursor data.
+
+### 4. Data Types and Storage
+
+- Data types in MongoDB (BSON): Explore the various data types supported by MongoDB, including their BSON representations (e.g., `ObjectId, timestamps, strings, arrays`, etc.).
+- Storage Engines: Understand the different storage engines available in MongoDB (e.g., WiredTiger, in-memory) and their characteristics.
+- GridFS: Learn about GridFS, a file storage solution for storing large files efficiently within MongoDB.
+
+### 5. Querying and Filtering
+
+- Finding / Querying: Explore various techniques for querying and filtering documents in MongoDB using the find method.
+- Learn operators like `$gt, $lt, $eq,` and logical operators like `$and, $or.`
+- Understand concepts like projection, filtering with the find method, and method chaining for complex queries.
+- Counting Documents: Learn methods like count to retrieve the number of documents in a collection.
+- Sorting and Limiting: Explore functionalities like sort and limit to order and limit the number of documents returned in a query.
+
+### 6. Advanced Operations
+
+- Aggregation Framework: Delve into the Aggregation Framework for performing complex data transformations and aggregations on collections.
+- Understand stages like `$match, $group, $sort, $count, and $lookup` for manipulating and combining data.
+- Indexes: Learn about indexes, data structures that enhance query performance by enabling faster retrieval of specific document fields.
+- Explore creating indexes, their types (single field, compound, etc.), and managing them (dropping, renaming).
+
+### 7. Data Modeling
+
+- Schema (Optional): Understand the concept of schema in MongoDB, its pros and cons, and how it can guide data structure design.
+- Relationships: Explore different approaches for modeling relationships between documents in MongoDB (embedding vs. referencing).
+- Learn about one-to-one, one-to-many, many-to-many relationships and their implementation strategies.
+
+### 8. Scalability and Replication
+
+- Replication: Understand the concept of replication for ensuring data availability and redundancy.
+- Explore replica sets, their architecture (primary, secondary nodes), election process, and advantages.
+- Sharding: Learn about sharding, a technique for distributing data across multiple servers (shards) for horizontal scaling and handling large datasets.
+- Understand sharding architecture (mongos, config servers), shard key selection, and balancing mechanisms.
+
+### 9. Administration and Monitoring
+
+- MongoDB Drivers: Learn about drivers, software libraries that interact with MongoDB from various programming languages.
+- Capped Collections: Explore capped collections, a special type of collection with a fixed size, useful for data streams or logs.
+- Profiling: Understand how to use the profiler to monitor MongoDB performance and identify potential bottlenecks.
+- Explain: Learn about the explain command used to analyze query execution plans and optimize performance.
+
+### 10. Advanced Topics
+
+- Soft Deleting: Learn techniques for "soft deleting" documents in MongoDB, marking them inactive instead of permanent removal.
+- Interview Questions: Explore common MongoDB interview questions to prepare for technical assessments.
+- Examples: Optimizing slow queries, handling large files, condensing data volumes, searching text, schema evolution, backup and restore strategies, etc.
+
+### 11. Good to Know
+
+- Atomicity: Understand the concept of atomicity in database transactions and how MongoDB handles operations.
+- Type Bracketing: Learn about type bracketing, a technique for explicitly specifying data types in queries for better optimization.
+- Dot Notation: Deepen your understanding of dot notation for accessing nested fields within documents.
+- Cursor Behavior: Explore advanced cursor functionalities like timeouts, batching, and closing connections efficiently.
+- Aggregation Pipeline: Gain further insights into the Aggregation Pipeline, including stages, performance considerations, and handling large datasets.
+- Retryable Writes and Reads: Learn how MongoDB handles retries for failed write and read operations.
+
+### 12. Additional Concepts
+
+- CRUD Concepts: Revisit CRUD operations at a deeper level, understanding their implications on data consistency and performance.
+- B-Tree: Explore B-Tree data structures, the foundation for indexing in MongoDB, and how they facilitate efficient data retrieval.
+- ACID Compliance: Understand the concept of ACID transactions (Atomicity, Consistency, Isolation, Durability) and how MongoDB handles these properties.
+
+### 13. Frameworks and Tools
+
+- Mongoose (This framework will be using in our First E Commerce Project): Learn about Mongoose, a popular ODM (Object Data Modeling) library for interacting with MongoDB from Node.js, providing a more object-oriented approach.
+
+### 14. Security
+
+- Network Components: Understand the role of network components like load balancers and firewalls in securing your MongoDB deployment.
+- CAP Theorem: Explore the CAP theorem (Consistency, Availability, Partition Tolerance) and its implications for distributed databases like MongoDB.
+- Firewall: Learn about configuring firewalls to restrict access to your MongoDB instance.
+
+### 15. Administration Tools 
+
+- Mongo Utilities: Explore various command-line utilities like `mongoexport, mongoimport, mongodump, mongorestore`, etc., for data manipulation, backup, and restoration.
+- Monitoring Tools (Optional): Learn about tools like `mongostat, mongotop, and mongooplog` for monitoring server performance, active connections, and operation logs.
+
+### 16. Advanced Deployment (Optional)
+
+- Clustered Collections: Understand clustered collections, a storage optimization technique for frequently accessed data together on disk.
+- Write-Ahead Logging (WAL): Explore the Write-Ahead Logging (WAL) mechanism used by MongoDB to ensure data durability.
+
+
 # 6. Mini Project - Users & Admin Managment System
 
 # 7. E-Commerce Project Planning & Designing
@@ -389,18 +494,3 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 # 28. Revision 2
 
 # 29. Final Interview Tips
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
