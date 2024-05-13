@@ -6,7 +6,7 @@
 #### Under Development (Star this repository for future references)
 
 <details> 
-  <summary> <h2> 1. HTML </h2> </summary>
+  <summary> <h2> 1. HTML (Click for expanding)</h2> </summary>
   
 ## Structure:
 - Document Type Definition (DOCTYPE) declaration.
