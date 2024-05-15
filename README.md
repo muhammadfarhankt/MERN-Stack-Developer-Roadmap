@@ -717,7 +717,320 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 # 13 - 15. Data Structures Week 1 - 3
 
-# 16. SQL Database
+<details>
+<summary><h1>16. Learn SQL with PostgreSQL</h1></summary>
+
+#### Understanding SQL vs. NoSQL
+- **Relational (SQL) Databases**: Store data in tables with rows and columns.
+  - Examples: PostgreSQL, MySQL.
+- **Non-Relational (NoSQL) Databases**: Store data in various formats like JSON, key-value pairs, graphs, or documents.
+  - Examples: MongoDB, Redis.
+- **Web-scaled**: Learn how databases handle large amounts of data across many servers.
+- **When to Use SQL vs. NoSQL**: SQL for structured data and complex queries, NoSQL for flexible, large-scale data storage.
+
+#### SQL Data Types
+- **null**: Represents missing or undefined data.
+- **bit**: Stores binary values (0 or 1).
+- **int**: Stores integer numbers.
+- **real / float**: Stores floating-point numbers.
+- **char, varchar, text**: Store text data.
+  - `char` is fixed-length.
+  - `varchar` is variable-length.
+  - `text` is for long texts.
+- **boolean**: Stores true/false values.
+- **date, datetime, timestamp**: Store date and time information.
+- **xml/json**: Store XML or JSON data.
+
+#### SQL Operators
+- **Arithmetic**: +, -, *, / (addition, subtraction, multiplication, division).
+- **Logical**: AND, OR, NOT (used in conditions).
+- **Comparison**: =, <>, >, <, >=, <= (comparing values).
+- **Bitwise**: &, |, ^ (operations on binary representations).
+
+#### PostgreSQL-Specific Data Types
+- **interval**: Time intervals.
+- **point**: Geometric points.
+- **bigserial**: Auto-incrementing large integers.
+- **Custom Types**: Create your own data types.
+
+#### Database Fundamentals
+- **Client/Server Model**: The database server manages data, clients connect to perform operations.
+- **Database Cluster**: A collection of databases managed by a single server instance.
+- **Constraints**: Rules to ensure data integrity.
+  - **UNIQUE**: No duplicate values allowed.
+  - **NOT NULL**: Data must be present.
+  - **PRIMARY KEY**: Unique identifier for table rows.
+  - **FOREIGN KEY**: Links to data in another table.
+  - **CHECK**: Custom conditions for data.
+
+#### SQL Commands and Migrations
+- **List Databases**: Show all databases.
+  - Command: `\l` in psql.
+- **Connect to Database**: Use to switch databases.
+  - Command: `\c <dbname>` in psql.
+- **List Tables**: Show all tables in the current database.
+  - Command: `\dt` in psql.
+- **Create Database/Table**: Define new databases and tables.
+  - Example: `CREATE DATABASE <name>;` `CREATE TABLE <name> (...);`.
+- **Drop Database/Table**: Remove databases and tables.
+  - Example: `DROP DATABASE <name>;` `DROP TABLE <name>;`.
+- **Migrations**: Version control for database changes.
+  - **Add/Delete**: Add or remove columns or tables.
+  - **Up/Down Migration**: Apply or rollback changes.
+
+#### SQL Functions and Clauses
+- **SELECT**: Retrieve data from tables.
+- **LIMIT**: Restrict the number of rows returned.
+- **OFFSET**: Skip a number of rows before returning the data.
+- **AS**: Rename columns or tables in the result set.
+- **DISTINCT**: Return unique values only.
+- **GROUP BY**: Group rows that have the same values in specified columns.
+- **HAVING**: Filter groups based on conditions.
+- **JOIN**: Combine rows from multiple tables.
+  - **INNER JOIN**: Only matching rows.
+  - **LEFT JOIN**: All rows from the left table, with matching rows from the right.
+  - **RIGHT JOIN**: All rows from the right table, with matching rows from the left.
+  - **FULL JOIN**: All rows when there is a match in either table.
+- **WHERE**: Filter rows based on conditions.
+- **ORDER BY**: Sort rows by specified columns.
+
+#### Views and Indexes
+- **Views**: Virtual tables created from queries.
+  - **CREATE VIEW**: Define a view.
+  - **Materialized View**: Stores results of the view query.
+- **Indexes**: Speed up searches by creating a fast lookup.
+  - **AUTO_INCREMENT**: Automatically increment values for a primary key.
+
+#### Advanced SQL Functions
+- **Aggregate Functions**: Perform calculations on sets of values.
+  - Examples: `AVG`, `SUM`, `MIN`, `MAX`, `COUNT`.
+- **Scalar Functions**: Operate on individual values.
+  - Examples: `UPPER`, `CONCAT`, `SUBSTR`.
+
+#### SQL Commands Categories
+- **DDL (Data Definition Language)**: Commands to define database structure.
+  - Examples: `CREATE`, `ALTER`, `DROP`, `TRUNCATE`.
+- **DML (Data Manipulation Language)**: Commands to manipulate data.
+  - Examples: `INSERT`, `SELECT`, `UPDATE`, `DELETE`.
+- **DCL (Data Control Language)**: Commands to control access to data.
+  - Examples: `GRANT`, `REVOKE`.
+- **TCL (Transaction Control Language)**: Commands to manage transactions.
+  - Examples: `COMMIT`, `ROLLBACK`, `SAVEPOINT`.
+- **DQL (Data Query Language)**: Command to query data.
+  - Example: `SELECT`.
+
+#### 3-Schema Architecture
+- **Internal Level**: Physical storage structure.
+- **Conceptual Level**: Logical structure of the entire database.
+- **External Level**: Individual user views.
+
+#### Database Normalization
+- **Normalization Levels**: Organize data to reduce redundancy.
+  - Levels: 1NF, 2NF, 3NF, BCNF.
+- **Anomalies**: Problems like insertion, deletion, or update issues.
+
+#### Relationships and Transactions
+- **One-to-One, One-to-Many, Many-to-Many**: Types of relationships between tables.
+- **Transactions**: Group of SQL statements executed as a unit.
+  - **ACID Properties**: Ensure reliability.
+    - **Atomicity**: All-or-nothing.
+    - **Consistency**: Data remains consistent.
+    - **Isolation**: Concurrent transactions do not interfere.
+    - **Durability**: Once committed, changes are permanent.
+
+#### Performance Optimization
+- **EXPLAIN**: Analyze query performance.
+  - **Heap Scan**: Read rows from a table in no particular order.
+  - **Parallel Scan**: Multiple processes scan the table concurrently.
+
+</details>
+
+<details>
+<summary><h2> 16.1 Create SQL CRUD REST API with Node.js (Optional)</h2></summary>
+
+#### Project Setup
+- **Initialize Project**: Create a new Node.js project using npm.
+  - Command: `npm init -y`.
+- **Dependencies**: Install necessary packages for SQL and HTTP handling.
+  - Example: `npm install express pg pg-hstore sequelize body-parser`.
+
+#### Database Integration
+- **Connect to PostgreSQL**: Use a connection string to link your Node.js application to the PostgreSQL database.
+  - Example using `pg`:
+    ```javascript
+    const { Pool } = require('pg');
+    const pool = new Pool({
+      user: 'username',
+      host: 'localhost',
+      database: 'dbname',
+      password: 'password',
+      port: 5432,
+    });
+    ```
+- **Database Models**: Define Sequelize models to map to your database tables.
+  - Example:
+    ```javascript
+    const { Sequelize, DataTypes } = require('sequelize');
+    const sequelize = new Sequelize('database', 'username', 'password', {
+      host: 'localhost',
+      dialect: 'postgres',
+    });
+
+    const User = sequelize.define('User', {
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+    });
+    ```
+
+#### CRUD Operations
+- **Create (INSERT)**: Add new records to the database.
+  - Example:
+    ```javascript
+    app.post('/users', async (req, res) => {
+      const { username, password } = req.body;
+      try {
+        const user = await User.create({ username, password });
+        res.json(user);
+      } catch (error) {
+        res.status(500).json({ error: 'Failed to create user' });
+      }
+    });
+    ```
+- **Read (SELECT)**: Retrieve records from the database.
+  - Example:
+    ```javascript
+    app.get('/users/:id', async (req, res) => {
+      const { id } = req.params;
+      try {
+        const user = await User.findByPk(id);
+        res.json(user);
+      } catch (error) {
+        res.status(500).json({ error: 'Failed to retrieve user' });
+      }
+    });
+    ```
+- **Update (UPDATE)**: Modify existing records in the database.
+  - Example:
+    ```javascript
+    app.put('/users/:id', async (req, res) => {
+      const { id } = req.params;
+      const { username, password } = req.body;
+      try {
+        const user = await User.findByPk(id);
+        if (user) {
+          user.username = username;
+          user.password = password;
+          await user.save();
+          res.json(user);
+        } else {
+          res.status(404).json({ error: 'User not found' });
+        }
+      } catch (error) {
+        res.status(500).json({ error: 'Failed to update user' });
+      }
+    });
+    ```
+- **Delete (DELETE)**: Remove records from the database.
+  - Example:
+    ```javascript
+    app.delete('/users/:id', async (req, res) => {
+      const { id } = req.params;
+      try {
+        const user = await User.findByPk(id);
+        if (user) {
+          await user.destroy();
+          res.json({ message: 'User deleted' });
+        } else {
+          res.status(404).json({ error: 'User not found' });
+        }
+      } catch (error) {
+        res.status(500).json({ error: 'Failed to delete user' });
+      }
+    });
+    ```
+
+#### Middleware and Error Handling
+- **Middleware**: Handle authentication, logging, or other pre-processing tasks.
+  - Example:
+    ```javascript
+    const logger = (req, res, next) => {
+      console.log(`${req.method} ${req.url}`);
+      next();
+    };
+    app.use(logger);
+    ```
+- **Error Handling**: Manage and respond to errors gracefully.
+  - Example:
+    ```javascript
+    app.use((err, req, res, next) => {
+      console.error(err.stack);
+      res.status(500).send('Something broke!');
+    });
+    ```
+
+#### Testing
+- **Unit Tests**: Test individual pieces of code.
+  - Example: Use `jest` for testing.
+    ```javascript
+    test('should create a user', async () => {
+      const user = await User.create({ username: 'testuser', password: 'password' });
+      expect(user.username).toBe('testuser');
+    });
+    ```
+- **Integration Tests**: Test interactions between components.
+  - Example: Use `supertest` to test API endpoints.
+    ```javascript
+    const request = require('supertest');
+    const app = require('../app');
+
+    test('GET /users/:id', async () => {
+      const res = await request(app).get('/users/1');
+      expect(res.statusCode).toBe(200);
+    });
+    ```
+
+#### Documentation
+- **API Documentation**: Use Swagger or similar tools to document your API.
+  - Example: Generate documentation from code annotations.
+    ```javascript
+    /**
+     * @swagger
+     * /users:
+     *   post:
+     *     summary: Create a new user
+     *     parameters:
+     *       - name: username
+     *         in: body
+     *         required: true
+     *       - name: password
+     *         in: body
+     *         required: true
+     *     responses:
+     *       200:
+     *         description: User created successfully
+     */
+    app.post('/users', (req, res) => { ... });
+    ```
+- **Setup Instructions**: Provide clear guidelines in your README.
+  - Example: 
+    ```markdown
+    ## Setup
+    1. Clone the repository: `git clone <repo-url>`
+    2. Install dependencies: `npm install`
+    3. Set up the database: `npm run db:migrate`
+    4. Start the server: `npm start`
+    ```
+
+</details>
+
+
+
 
 # 17. React Fundamentals
 ### Mini Project - Todo Application
