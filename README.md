@@ -697,29 +697,44 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 </details>
 
-## Under Development
+<details> <summary> <h2> 6. Mini Project - Users & Admin Managment System (Under Development) </h2> </summary>
 
-# 6. Mini Project - Users & Admin Managment System
+</details>
 
-# 7. E-Commerce Project Planning & Designing
+<details> <summary> <h2> 7. E-Commerce Project Planning & Designing (Under Development) </h2> </summary>
+
 ### Database Design, API Documentation & Modules List
 
-# 8. Project Week 1
-## User 
+</details>
 
-# 9. Project Week 2
+<details> <summary> <h2> 8. Project Week 1 <h2> (Under Development) </h2> </summary>
 
-# 10. Project Week 3
+### User
 
-# 11. Project Week 4
+### Admin
 
-# 12. Project Week 5 : Hosting
+</details>
+
+<details> <summary> <h2> 9. Project Week 2 (Under Development) </h2> </summary>
+
+</details>
+
+<details> <summary> <h2> 10. Project Week 3 (Under Development) </h2> </summary>
+
+</details>
+
+<details> <summary> <h2> 11. Project Week 4 - Project Completion (Under Development) </h2> </summary>
+
+</details>
+
+<details> <summary> <h2> 12. Project Week 5 - Hosting (Under Development) </h2> </summary>
+
+</details>
 
 # 13 - 15 [Data Structures and Algorithms Roadmap. 3 Weeks](https://github.com/muhammadfarhankt/Data-Structures-Algoithms-Resource-for-Beginners/)
 
-
 <details>
-<summary><h1>16. Learn SQL with PostgreSQL</h1></summary>
+<summary><h2>16. Learn SQL with PostgreSQL</h2></summary>
 
 #### Understanding SQL vs. NoSQL
 - **Relational (SQL) Databases**: Store data in tables with rows and columns.
@@ -1030,31 +1045,84 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 </details>
 
-# 17. React Fundamentals
+</details>
+
+<details> <summary> <h2> 17. React Fundamentals (Under Development) </h2> </summary>
+
 ### Mini Project - Todo Application
 
-# 18. React Mini Projects
-### Mini Projects - NETFLIX & OLX Clone Mini Projects
+</details>
 
-# 19. React 3 - Redux Toolkit
+
+<details> <summary> <h2> 18. React Mini Projects (Under Development) </h2> </summary>
+
+  ### Mini Projects - NETFLIX & OLX Clone Mini Projects
+
+</details>
+
+<details> <summary> <h2>  19. React 3 - Redux Toolkit (Under Development) </h2> </summary>
+
 ### Mini Project - User Managment System
 
-# 20. Revision Week
+</details>
 
-# 21. Project Design
 
-# 22. Project Week 1
+<details>
+    <summary>
+        <h2>20. Revision Week (Under Development)</h2>
+    </summary>
+</details>
 
-# 23. Project Week 2
+<details>
+    <summary>
+        <h2>21. Project Design (Under Development)</h2>
+    </summary>
+</details>
 
-# 24. Project Week 3
+<details>
+    <summary>
+        <h2>22. Project Week 1 (Under Development)</h2>
+    </summary>
+</details>
 
-# 25. Project Week 4
+<details>
+    <summary>
+        <h2>23. Project Week 2 (Under Development)</h2>
+    </summary>
+</details>
 
-# 26. Project Week 5 : Hosting
+<details>
+    <summary>
+        <h2>24. Project Week 3 (Under Development)</h2>
+    </summary>
+</details>
 
-# 27. Revision 1
+<details>
+    <summary>
+        <h2>25. Project Week 4: Completion (Under Development)</h2>
+    </summary>
+</details>
 
-# 28. Revision 2
+<details>
+    <summary>
+        <h2>26. Project Week 5: Hosting (Under Development)</h2>
+    </summary>
+</details>
 
-# 29. Job Interview Tips
+<details>
+    <summary>
+        <h2>27. Revision 1 (Under Development)</h2>
+    </summary>
+</details>
+
+<details>
+    <summary>
+        <h2>28. Revision 2 (Under Development)</h2>
+    </summary>
+</details>
+
+<details>
+    <summary>
+        <h2>29. Job Interview Tips (Under Development)</h2>
+    </summary>
+</details>
