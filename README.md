@@ -1075,6 +1075,19 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 <details>
     <summary>
+        <h2>21. Learn Basic Devops (Docker & Kubernetes - k8s) & Microservice Architecture (Under Development)</h2>
+    </summary>
+  <h4> Dockerise first E-Commerce Project</h4>
+</details>
+
+<details>
+    <summary>
+        <h2>22. Learn Message Brokers, CICD Pipelines, gRPC + Two Mini Projects (Under Development)</h2>
+    </summary>
+</details>
+
+<details>
+    <summary>
         <h2>21. Project Design (Under Development)</h2>
     </summary>
 </details>
