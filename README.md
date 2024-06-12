@@ -101,7 +101,7 @@
 - Learn how to use media queries in your CSS to adjust layouts for specific screen sizes (desktop, tablet, mobile) on top of Bootstrap's built-in responsiveness.
 - Use media queries to fine-tune the behavior of Bootstrap components or override default styles for a more customized responsive experience.
 
-### 5. Additional Learning (Throughout the Week):
+### 5. Additional Learning :
 
 - Delve deeper into DOM manipulation techniques for dynamic content changes based on user interactions or events (e.g., adding/removing elements, updating content).
 - Explore advanced selectors for more precise element selection in your JavaScript code when working with Bootstrap components.
@@ -707,7 +707,7 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 </details>
 
-<details> <summary> <h2> 8. Project Week 1 <h2> (Under Development) </h2> </summary>
+<details> <summary> <h2> 8. Project 1 <h2> (Under Development) </h2> </summary>
 
 ### User
 
@@ -715,23 +715,23 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 </details>
 
-<details> <summary> <h2> 9. Project Week 2 (Under Development) </h2> </summary>
+<details> <summary> <h2> 9. Project 2 (Under Development) </h2> </summary>
 
 </details>
 
-<details> <summary> <h2> 10. Project Week 3 (Under Development) </h2> </summary>
+<details> <summary> <h2> 10. Project 3 (Under Development) </h2> </summary>
 
 </details>
 
-<details> <summary> <h2> 11. Project Week 4 - Project Completion (Under Development) </h2> </summary>
+<details> <summary> <h2> 11. Project 4 - Project Completion (Under Development) </h2> </summary>
 
 </details>
 
-<details> <summary> <h2> 12. Project Week 5 - Hosting (Under Development) </h2> </summary>
+<details> <summary> <h2> 12. Project 5 - Hosting (Under Development) </h2> </summary>
 
 </details>
 
-# 13 - 15 [Data Structures and Algorithms Roadmap. 3 Weeks](https://github.com/muhammadfarhankt/Data-Structures-Algoithms-Resource-for-Beginners/)
+# 13 - 15 [Data Structures and Algorithms Roadmap. 3 Weeks (Basics, Intermediate, Advanced)](https://github.com/muhammadfarhankt/Data-Structures-Algoithms-Resource-for-Beginners/)
 
 <details>
 <summary><h2>16. Learn SQL with PostgreSQL</h2></summary>
@@ -1069,7 +1069,7 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 <details>
     <summary>
-        <h2>20. Revision Week (Under Development)</h2>
+        <h2>20. Revision (Under Development)</h2>
     </summary>
 </details>
 
@@ -1277,31 +1277,31 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 <details>
     <summary>
-        <h2>22. Project Week 1 (Under Development)</h2>
+        <h2>22. Project 1 (Under Development)</h2>
     </summary>
 </details>
 
 <details>
     <summary>
-        <h2>23. Project Week 2 (Under Development)</h2>
+        <h2>23. Project 2 (Under Development)</h2>
     </summary>
 </details>
 
 <details>
     <summary>
-        <h2>24. Project Week 3 (Under Development)</h2>
+        <h2>24. Project 3 (Under Development)</h2>
     </summary>
 </details>
 
 <details>
     <summary>
-        <h2>25. Project Week 4: Completion (Under Development)</h2>
+        <h2>25. Project 4: Completion (Under Development)</h2>
     </summary>
 </details>
 
 <details>
     <summary>
-        <h2>26. Project Week 5: Hosting (Under Development)</h2>
+        <h2>26. Project 5: Hosting (Under Development)</h2>
     </summary>
 </details>
 
