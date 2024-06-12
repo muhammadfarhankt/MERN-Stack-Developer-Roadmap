@@ -731,7 +731,7 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 </details>
 
-# 13 - 15 [Data Structures and Algorithms Roadmap. 3 Weeks (Basics, Intermediate, Advanced)](https://github.com/muhammadfarhankt/Data-Structures-Algoithms-Resource-for-Beginners/)
+## 13 - 15 [Data Structures and Algorithms Roadmap. 3 Weeks (Basics, Intermediate, Advanced)](https://github.com/muhammadfarhankt/Data-Structures-Algoithms-Resource-for-Beginners/)
 
 <details>
 <summary><h2>16. Learn SQL with PostgreSQL</h2></summary>
