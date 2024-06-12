@@ -1075,10 +1075,197 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
 
 <details>
     <summary>
-        <h2>21. Learn Basic Devops (Docker & Kubernetes - k8s) & Microservice Architecture (Under Development)</h2>
+        <h2>21. Learn Basic Devops (Docker & Kubernetes - k8s) & Microservice Architecture.</h2>
     </summary>
-  <h4> Dockerise first E-Commerce Project</h4>
+  
+  <h3> Dockerise first E-Commerce Project</h3>
+
+## Microservices Fundamentals
+
+- **What is a Microservice?**
+  - A small, independent service that performs a specific business function.
+  - Communicates with other services through well-defined APIs.
+  - Promotes modularity and loose coupling.
+
+- **Monolithic vs. Microservices Architecture**
+  - **Monolithic:**
+    - Single codebase for the entire application.
+    - Simpler development and deployment initially.
+    - Scalability and maintainability challenges as the application grows.
+  - **Microservices:**
+    - Application broken down into smaller, independent services.
+    - Increased complexity but improved scalability, maintainability, and fault tolerance.
+
+## Principles of Microservices
+
+- **Independent and Autonomous Services**
+  - Each service should be self-contained and deployable independently.
+
+- **Scalability**
+  - Services can be scaled independently based on their needs.
+
+- **Decentralization**
+  - Promotes ownership and faster development cycles for individual services.
+
+- **Resilient Services**
+  - Failure in one service should not bring down the entire application.
+
+- **Real-time Load Balancing**
+  - Enables efficient distribution of traffic across service instances.
+
+## Benefits of Microservices
+
+- **Scalability**
+  - Microservices can be scaled independently to meet varying demands.
+
+- **Flexibility**
+  - Easier to add new features or modify existing functionality.
+
+- **Maintainability**
+  - Smaller codebases are easier to understand and maintain.
+
+- **Fault Tolerance**
+  - Failure in one service has minimal impact on others.
+
+- **Development Agility**
+  - Independent development and deployment cycles for services.
+
+## Challenges of Microservices
+
+- **Increased complexity**
+  - Distributed system management overhead.
+
+- **Debugging and Testing**
+  - Requires a shift in approach compared to monoliths.
+
+- **Communication Overhead**
+  - Managing communication between services can add complexity.
+
+- **Security Considerations**
+  - Requires robust security measures across services.
+
+## Cloud Computing and Deployment
+
+- **Public Cloud**
+  - Computing resources (servers, storage, databases) delivered over the internet. (e.g., Amazon Web Services, Microsoft Azure, Google Cloud Platform)
+
+- **Private Cloud**
+  - Cloud infrastructure operated for a single organization. Offers greater control and security.
+
+- **On-Premises**
+  - Traditional approach of owning and managing physical IT infrastructure.
+
+- **Deployment Models:**
+  - Infrastructure as a Service (IaaS)
+  - Platform as a Service (PaaS)
+  - Software as a Service (SaaS)
+
+- **Benefits of Deploying Microservices on the Cloud:**
+  - **Scalability:** Easily scale services up or down based on demand.
+  - **Agility:** Faster deployments and easier management of infrastructure.
+  - **Cost-effectiveness:** Pay only for the resources you use.
+
+<h2>Docker and Kubernetes Roadmap: A Deep Dive</h2>
+
+## I. Docker
+
+### What is Docker?
+
+- A platform for developing, deploying, and running applications in containers.
+- Containers are lightweight, isolated environments that share the underlying operating system kernel.
+- Enables consistent and portable deployments across different environments.
+
+### Docker Architecture
+
+- **Client:** User interface for interacting with the Docker daemon.
+- **Daemon:** Background process that builds, runs, and manages containers.
+- **Registry:** Centralized repository for storing and sharing container images. (e.g., Docker Hub)
+
+### Key Docker Concepts
+
+- **Images:** Read-only templates for creating containers.
+- **Containers:** Isolated instances of an image running on a host system.
+- **Volumes:** Persistent data storage for containers. Independent of the container lifecycle.
+
+### Docker Commands
+
+- **Building Images:** `docker build`
+- **Running Containers:** `docker run`
+- **Managing Containers:** `docker ps`, `docker stop`, `docker start`, `docker rm`
+- **Image Management:** `docker pull`, `docker push`
+- **Networking:** Docker network commands
+- **Volume Management:** Docker volume commands
+
+### Learning Resources:
+
+- Official Docker Documentation: [Docker Documentation](https://docs.docker.com/)
+- Docker Tutorials: [Get Started with Docker](https://docs.docker.com/get-started/)
+- Interactive Docker Playground: [Katacoda - Docker](https://www.katacoda.com/learn)
+
+## II. Kubernetes
+
+### What is Kubernetes (k8s)?
+
+- An open-source system for automating deployment, scaling, and management of containerized applications.
+- Orchestrates containerized workloads across a cluster of machines.
+
+### Why Use Kubernetes?
+
+- Automated Deployments
+- Scalability
+- Self-Healing Capabilities
+- Load Balancing
+- High Availability
+
+### Kubernetes Architecture
+
+- **Cluster**
+- **Node**
+- **Master Node**
+- **Pod**
+
+### Key Kubernetes Concepts
+
+- **Deployments**
+- **Services**
+- **Namespaces**
+- **Labels and Selectors**
+- **Volumes**
+- **Horizontal Pod Autoscaler (HPA)**
+- **Ingress**
+
+### Kubernetes Commands (kubectl)
+
+- Managing Pods
+- Managing Deployments
+- Managing Services
+- Managing Namespaces
+- Viewing Logs
+
+### Learning Resources:
+
+- Official Kubernetes Documentation: [Kubernetes Documentation](https://kubernetes.io/docs/home/)
+- Kubernetes Tutorials: [Kubernetes Tutorials](https://kubernetes.io/docs/tutorials/)
+- Interactive Kubernetes Playground: [Katacoda - Kubernetes](https://www.katacoda.com/)
+
+
+<h2>Beyond the Basics</h2>
+
+- Explore advanced Docker features like Docker Swarm for multi-host container orchestration.
+- Deep dive into Kubernetes concepts like service discovery, ingress controllers, and security best practices
+- API Gateway: Single entry point for managing APIs of microservices.
+- Service Discovery: Mechanism for services to find each other in a distributed environment.
+
+## Learning Resources
+
+**Articles:**
+- [Microservices Roadmap](https://medium.com/@doremonlabs_70503/microservices-roadmap-45771379512f)
+
+**Videos:**
+- [Microservices explained - A gentle introduction](https://www.youtube.com/watch?v=ZoYQPxCF8xI)
+
 </details>
+
 
 <details>
     <summary>
@@ -1086,11 +1273,7 @@ Readable streams, Writable streams, Duplex streams and Transform streams.
     </summary>
 </details>
 
-<details>
-    <summary>
-        <h2>21. Project Design (Under Development)</h2>
-    </summary>
-</details>
+
 
 <details>
     <summary>
